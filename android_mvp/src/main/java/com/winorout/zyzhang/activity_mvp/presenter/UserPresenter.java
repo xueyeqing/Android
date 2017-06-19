@@ -26,10 +26,12 @@ public class UserPresenter {
         iuserModel.setID(id);
         iuserModel.setFirstName(firstName);
         iuserModel.setLastName(lastName);
+        Log.d("zyzhang",id+":"+firstName+":"+lastName);
     }
 
     public void loadUser(int id) {
         UserBean user = iuserModel.load(id);
+        Log.d("zyzhang",user.getmFirstName());
         mUserView.setFirstName(user.getmFirstName());//通过调用IUserView的方法来更新显示
         mUserView.setLastName(user.getmLastName());
     }

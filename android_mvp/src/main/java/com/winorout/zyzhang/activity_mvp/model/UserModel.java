@@ -29,6 +29,8 @@ public class UserModel implements IuserModel {
     @Override
     public void setLastName(String lastName) {
         mLastName = lastName;
+        UserBean UserBean = new UserBean(mFristName, mLastName);
+        mUsererArray.append(mID, UserBean);
     }
 
     @Override
