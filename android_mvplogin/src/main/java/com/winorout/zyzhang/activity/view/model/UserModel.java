@@ -29,4 +29,11 @@ public class UserModel {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    public int checkUserValidity(String name, String pass) {
+        if (name == null || pass == null || name.isEmpty() || pass.isEmpty()) {
+            return -1;
+        }
+        return 0;
+    }
 }
