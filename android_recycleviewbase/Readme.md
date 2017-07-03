@@ -31,3 +31,20 @@ RecyclerView标准化了ViewHolder，而且异常的灵活，可以轻松实现L
    onDrawOver(Canvas c, RecyclerView parent, State state)，在Item绘制之前被调用，该方法主要用于绘制间隔样式
    getItemOffsets(Rect outRect, View view, RecyclerView parent, State state)，设置item的偏移量，偏移的部分用于填充间隔样式，在RecyclerView的onMesure()中会调用该方法
   ```
+  > 动画 RecyclerView可以设置列表中Item删除和添加的动画，在v7包中给我们提供了一种默认的Item删除和添加的动画，如果没有特殊的需求，默认使用这个动画即可。
+  ```
+   // 设置Item添加和移除的动画
+   mRecyclerView.setItemAnimator(new DefaultItemAnimator());
+  ```
+  > item 点击事件
+  ```
+    1、在Myadapter中定义接口如下：
+    public interface OnItemClickListener {
+      void onItemClick(View view, int position);
+      void onItemLongClick(View view, int position);
+    }
+    2、并设置回调监听，如下：
+    public void setOnItemClickListener(MyAdapter.OnItemClickListener listener){
+       this.onItemClickListener = listener;
+    }
+  ```

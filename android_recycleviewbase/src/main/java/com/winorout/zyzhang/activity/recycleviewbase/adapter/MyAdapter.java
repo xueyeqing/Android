@@ -19,8 +19,30 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
     private ArrayList<String> mData;
 
+    /**
+     * 事件回调监听
+     */
+    private MyAdapter.OnItemClickListener onItemClickListener;
+
+
     public MyAdapter(ArrayList<String> data) {
         this.mData = data;
+    }
+
+    public void addNewItem() {
+        if (mData == null) {
+            mData = new ArrayList<>();
+        }
+        mData.add(0, "new Item");
+        notifyItemInserted(0);
+    }
+
+    public void deleteItem() {
+        if (mData == null || mData.isEmpty()) {
+            return;
+        }
+        mData.remove(0);
+        notifyItemRemoved(0);
     }
 
     /**
@@ -46,9 +68,37 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
      * @param position
      */
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
+    public void onBindViewHolder(final ViewHolder holder, int position) {
         // 绑定数据
         holder.mTv.setText(mData.get(position));
+
+        /**
+         * item 点击事件
+         */
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (onItemClickListener != null) {
+                    int pos = holder.getLayoutPosition();
+                    onItemClickListener.onItemClick(holder.itemView, pos);
+                }
+            }
+        });
+
+        /**
+         *item 长按事件
+         */
+        holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
+                if (onItemClickListener != null) {
+                    int pos = holder.getLayoutPosition();
+                    onItemClickListener.onItemLongClick(holder.itemView, pos);
+                }
+                //表示此事件已经消费，不会触发单击事件
+                return true;
+            }
+        });
     }
 
     @Override
@@ -67,6 +117,25 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
             super(itemView);
             mTv = (TextView) itemView.findViewById(R.id.item_tv);
         }
+    }
+
+    /**
+     * 定义接口
+     */
+    public interface OnItemClickListener {
+
+        void onItemClick(View view, int pos);
+
+        void onItemLongClick(View view, int pos);
+    }
+
+    /**
+     * 设置回调监听
+     *
+     * @param listener
+     */
+    public void setOnItemClickListener(MyAdapter.OnItemClickListener listener) {
+        this.onItemClickListener = listener;
     }
 
 }
