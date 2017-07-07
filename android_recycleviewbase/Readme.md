@@ -28,7 +28,7 @@ RecyclerView标准化了ViewHolder，而且异常的灵活，可以轻松实现L
   ```
    自定义间隔样式需要继承RecyclerView.ItemDecoration类，该类是个抽象类，主要有三个方法。
    onDraw(Canvas c, RecyclerView parent, State state)，在Item绘制之前被调用，该方法主要用于绘制间隔样式
-   onDrawOver(Canvas c, RecyclerView parent, State state)，在Item绘制之前被调用，该方法主要用于绘制间隔样式
+   onDrawOver(Canvas c, RecyclerView parent, State state)，在Item绘制之后被调用，该方法主要用于绘制间隔样式
    getItemOffsets(Rect outRect, View view, RecyclerView parent, State state)，设置item的偏移量，偏移的部分用于填充间隔样式，在RecyclerView的onMesure()中会调用该方法
   ```
   > 动画 RecyclerView可以设置列表中Item删除和添加的动画，在v7包中给我们提供了一种默认的Item删除和添加的动画，如果没有特殊的需求，默认使用这个动画即可。
@@ -48,3 +48,12 @@ RecyclerView标准化了ViewHolder，而且异常的灵活，可以轻松实现L
        this.onItemClickListener = listener;
     }
   ```
+  
+##总结
+  > 水平列表展示，设置LayoutManager的方向性
+  
+  > 竖直列表展示，设置LayoutManager的方向性
+  
+  > 自定义间隔，RecyclerView.addItemDecoration()
+  
+  > Item添加和删除动画,RecyclerView.setItemAnimator()
