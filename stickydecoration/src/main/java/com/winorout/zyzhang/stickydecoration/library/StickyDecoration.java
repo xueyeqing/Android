@@ -72,9 +72,10 @@ public class StickyDecoration extends BaseDecoration {
                 if (mDivideHeight != 0) {
                     float bottom = view.getTop();
                     if (bottom < mGroupHeight) {
-                        //高度小于顶部悬浮栏时，跳过绘制
+                        //高度小于顶部悬浮栏时，跳过绘制 。此处避免防止view到了悬浮框的位置，分割线显示在悬浮框上。
                         continue;
                     }
+                    // 绘制分割线
                     c.drawRect(left, bottom - mDivideHeight, right, bottom, mDividePaint);
                 }
             } else {

@@ -28,5 +28,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-//    public void toSticky(View view) { startActivity(new Intent(this, StickyRecyclerViewActivity.class));}
+    public void toPowerfulSticky(View view) {
+        startActivity(new Intent(this, PowerfulStickyRecycleViewActivity.class));
+    }
 }

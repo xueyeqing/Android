@@ -18,6 +18,7 @@
         </activity>
 
         <activity android:name=".StickyRecyclerViewActivity"></activity>
+        <activity android:name=".PowerfulStickyRecycleViewActivity"></activity>
     </application>
 
 </manifest>
