@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">a_PracticeDraw1</string>
+    <string name="title_draw_color">画颜色(Color)</string>
+    <string name="title_draw_circle">画圆(Circle)</string>
+    <string name="title_draw_rect">画矩形(Rect)</string>
+    <string name="title_draw_point">画点(Point)</string>
+    <string name="title_draw_oval">椭圆(Oval)</string>
+    <string name="title_draw_line">画线(Line)</string>
+    <string name="title_draw_round_rect">drawRoundRect()</string>
+    <string name="title_draw_arc">drawArc()</string>
+    <string name="title_draw_path">drawPath()</string>
+    <string name="title_draw_histogram">直方图</string>
+    <string name="title_draw_pie_chart">饼图</string>
+</resources>
