@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Android_practice1</string>
+    <string name="item_home">首页</string>
+    <string name="item_location">位置</string>
+    <string name="item_like">喜欢</string>
+    <string name="item_person">我的</string>
+</resources>

@@ -1,1 +1,1 @@
-include ':android_mvp', ':android_mvvm', ':android_mvplogin', ':android_stickydecoration', ':android_recycleviewbase', ':stickydecoration'
+include ':android_mvp', ':android_mvvm', ':android_mvplogin', ':android_stickydecoration', ':android_recycleviewbase', ':stickydecoration', ':a_practicedraw1', ':android_practice1', ':android_practice1'
