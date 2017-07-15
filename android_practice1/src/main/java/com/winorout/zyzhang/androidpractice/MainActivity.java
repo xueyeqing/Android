@@ -64,6 +64,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationB
     @Override
     public void onTabSelected(int position) {
 
+        //开启事务
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         switch (position) {
             case 0:
@@ -97,6 +98,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationB
                 transaction.replace(R.id.sub_content, homeFragment);
                 break;
         }
+        // 事务提交
         transaction.commit();
     }
 

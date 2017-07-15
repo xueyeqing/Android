@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.ViewStub;
 import android.widget.TextView;
 
 import com.winorout.zyzhang.androidpractice.R;
@@ -29,9 +30,13 @@ public class LocationFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_content, container, false);
+        ViewStub practiceStub = (ViewStub) view.findViewById(R.id.practiceStub);
+        practiceStub.setLayoutResource(R.layout.fragment_location);
+        practiceStub.inflate();
+
         Bundle bundle = getArguments();
         String s = bundle.getString("args");
-        TextView textView = (TextView) view.findViewById(R.id.activity_text_view);
+        TextView textView = (TextView) view.findViewById(R.id.location_tv);
         textView.setText(s);
         return view;
     }
