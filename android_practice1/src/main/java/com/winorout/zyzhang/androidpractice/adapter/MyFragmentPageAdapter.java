@@ -3,6 +3,9 @@ package com.winorout.zyzhang.androidpractice.adapter;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.util.Log;
+
+import java.util.List;
 
 /**
  * @Description: 自定义fragment适配器
@@ -11,17 +14,29 @@ import android.support.v4.app.FragmentPagerAdapter;
  */
 public class MyFragmentPageAdapter extends FragmentPagerAdapter {
 
-    public MyFragmentPageAdapter(FragmentManager fm) {
+    private List<Fragment> list;
+    private String[] titles;
+
+    public MyFragmentPageAdapter(FragmentManager fm, String[] titles, List<Fragment> fragmentList) {
         super(fm);
+        this.titles = titles;
+        this.list = fragmentList;
     }
 
     @Override
     public Fragment getItem(int position) {
-        return null;
+        return list.get(position);
     }
 
     @Override
     public int getCount() {
-        return 0;
+        return list.size();
+    }
+
+    //重写这个方法，将设置每个Tab的标题
+    @Override
+    public CharSequence getPageTitle(int position) {
+        Log.d("zyzhang","position:"+position);
+        return titles[position];
     }
 }
