@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.view.ViewStub;
 
 /**
- * @Description:
+ * @Description: 用于创建Fragment对象，作为ViewPager的叶片
  * @Author: zyzhang
  * @Date: 17/7/10 下午10:38
  */
@@ -27,6 +27,9 @@ public class PageFragment extends Fragment {
         return fragment;
     }
 
+    /**
+     * 为Fragment加载布局时调用
+     **/
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

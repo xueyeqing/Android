@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">a_PracticeDraw1</string>
-    <string name="title_draw_color">画颜色(Color)</string>
-    <string name="title_draw_circle">画圆(Circle)</string>
-    <string name="title_draw_rect">画矩形(Rect)</string>
+    <string name="title_draw_color">基础</string>
+    <string name="title_draw_circle">Shader</string>
+    <string name="title_draw_rect">MaskFilter</string>
     <string name="title_draw_point">画点(Point)</string>
     <string name="title_draw_oval">椭圆(Oval)</string>
     <string name="title_draw_line">画线(Line)</string>
