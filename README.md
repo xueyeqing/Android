@@ -1,6 +1,18 @@
 # Android Demo
 
-## RecyclerView：打造悬浮效果
+## a_practicedraw1
+  > android canvas相关的实例
+  
+## android_recycleviewbase
+  > recycleview的使用
+  
+## android_stickydecoration 
+  > 顶部悬浮效果
+  
+## a_practice
+  > MVP+Retrofit+Rxjava实现Demo
+
+### RecyclerView：打造悬浮效果
   > 利用RecyclerView.ItemDecoration实现的悬浮效果。
   
   > 1.文字悬浮。2.自定义view悬浮。
