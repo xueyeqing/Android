@@ -9,13 +9,16 @@
 ## android_stickydecoration 
   > 顶部悬浮效果
   
-## a_practice
+## a_practice2
+  > DrawerLayout+Toolbar+ActionBarDrawerToggle实现抽屉效果
   > MVP+Retrofit+Rxjava实现Demo
 
-### RecyclerView：打造悬浮效果
+## RecyclerView：打造悬浮效果
   > 利用RecyclerView.ItemDecoration实现的悬浮效果。
   
   > 1.文字悬浮。2.自定义view悬浮。
+  
+
   
 ### ButterKnife 简介
   > [项目github地址](https://github.com/JakeWharton/butterknife)

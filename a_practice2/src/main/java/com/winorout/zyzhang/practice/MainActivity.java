@@ -1,17 +1,32 @@
 package com.winorout.zyzhang.practice;
 
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
+import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
 import android.support.v4.view.GravityCompat;
+import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+import com.winorout.zyzhang.practice.adapter.MyFragmentPageAdapter;
+import com.winorout.zyzhang.practice.fragment.NewsFragment;
+import com.winorout.zyzhang.practice.fragment.ScheduleFragment;
+
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+
+    private TabLayout tabLayout;
+    private ViewPager pager;
+    private ArrayList<Fragment> list;
+    private String[] titles = {"页面1", "页面2"};
+    MyFragmentPageAdapter fragmentPagerAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +41,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         textView.setText("首页");
 
         setSupportActionBar(toolbar);
+
+
+        list = new ArrayList<>();
+        list.add(new NewsFragment());
+        list.add(new ScheduleFragment());
+
+        pager = (ViewPager) findViewById(R.id.pager);
+        tabLayout = (TabLayout) findViewById(R.id.tabLayout);
+        fragmentPagerAdapter = new MyFragmentPageAdapter(getSupportFragmentManager(), titles, list);
+        pager.setAdapter(fragmentPagerAdapter);
+        tabLayout.setupWithViewPager(pager);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
