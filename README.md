@@ -11,6 +11,8 @@
   
 ## a_practice2
   > DrawerLayout+Toolbar+ActionBarDrawerToggle实现抽屉效果
+    ![](https://github.com/xueyeqing/Android/blob/master/a_practice2/src/main/res/drawable/a.png)
+    ![](https://github.com/xueyeqing/Android/blob/master/a_practice2/src/main/res/drawable/b.png)
   > MVP+Retrofit+Rxjava实现Demo
 
 ## RecyclerView：打造悬浮效果
