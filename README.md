@@ -9,11 +9,13 @@
 ## android_stickydecoration 
   > 顶部悬浮效果
   
-##android_practiced1
+## android_practiced1
  > 底部使用插件：BottomNavigationBar 4个子页面为4个fragment
  
  > 首页使用TabLayout＋ViewPager
- 效果如下：![](https://github.com/xueyeqing/Android/blob/master/android_practice1/src/main/res/drawable/hd.png)
+ 
+ > 同时使用了ViewSub的用法，具体参考代码部分
+ 效果如图：![](https://github.com/xueyeqing/Android/blob/master/android_practice1/src/main/res/drawable/hd.png)
   
 ## a_practice2
   > DrawerLayout+Toolbar+ActionBarDrawerToggle实现抽屉效果
