@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.winorout.zyzhang.customcontentprovide">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="com.winorout.zyzhang.customcontentprovide.BookProvider"
+            android:authorities="com.winorout.zyzhang.customcontentprovide.bookprovider"
+            android:enabled="true"
+            android:exported="true" />
+    </application>
+
+    <!--//android:name属性的值是：ContentProvider类的子类的完整路径；-->
+    <!--//android:authorities属性的值是：content:URI中authority部分。一般就是将name属性的值全小写。-->
+    <!--//android:exported属性是否允许其他应用调用。如果是false，则该ContentProvider不允许其他应用调用。-->
+    <!--//enabled为true指的是允许系统去启动这个provider，-->
+    <!--//exported为true是允许其它应用使用这个provider-->
+    <!--定义了向系统申请的权限 外部应用访问自定义的provider使用uses-permission-->
+    <!--<permission android:name="zyzhang.permission.READ_ITBOOK" />-->
+    <!--<permission android:name="zyzhang.permission.WRITE_ITBOOK" />-->
+    <!--<uses-permission android:name="ckt.permission.READ_ITBOOK" />-->
+    <!--<uses-permission android:name="ckt.permission.WRITE_ITBOOK" />-->
+    <!--别的应用需要使用的话 加入权限即可 如：android:writePermission="zyzhang.permission.WRITE_ITBOOK"  -->
+</manifest>
