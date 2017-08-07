@@ -20,3 +20,4 @@
     app:headerLayout="@layout/header_layout"表示引用一个头布局文件
     app:menu="@menu/main"表示引用一个menu作为下面的点击项
   ```
+  1.3、(模版地址)[https://github.com/xueyeqing/Android/tree/template/a_practice2]
