@@ -21,3 +21,17 @@
     app:menu="@menu/main"表示引用一个menu作为下面的点击项
   ```
   1.3、(模版地址)[https://github.com/xueyeqing/Android/tree/template/a_practice2]
+  
+###  关于Retrofit用法
+ 
+ > 随着Google对HttpClient 摒弃,和Volley的逐渐没落,OkHttp开始异军突起,而Retrofit则对okHttp进行了强制依赖。
+ 
+ 如何使用：
+   1、首先需要在build.gradle文件中引入需要的第三包，配置如下：
+   
+     ```
+      compile 'com.squareup.retrofit2:retrofit:2.1.0'
+      compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+      compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+     ```
+   2、(参考资料)[http://blog.csdn.net/u011200604/article/details/72901564]
