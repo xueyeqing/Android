@@ -23,6 +23,8 @@
  ![](https://github.com/xueyeqing/Android/blob/master/a_practice2/src/main/res/drawable/a.png) ![](https://github.com/xueyeqing/Android/blob/master/a_practice2/src/main/res/drawable/b.png)
   
   > MVP+Retrofit+Rxjava实现Demo
+  
+ ![](https://github.com/xueyeqing/Android/tree/master/a_practice2/src/main/res/drawable/1.pic.jpg) 
 
 ## RecyclerView：打造悬浮效果
   > 利用RecyclerView.ItemDecoration实现的悬浮效果。

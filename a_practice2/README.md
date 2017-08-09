@@ -35,3 +35,17 @@
       compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
      ```
    2、(参考资料)[http://blog.csdn.net/u011200604/article/details/72901564]
+   
+### CardView
+
+  > 引入：compile 'com.android.support:cardview-v7:25.3.1'
+
+  > 是Android 5.0系统引入的控件，相当于FragmentLayout布局控件然后添加圆角及阴影的效果；
+  
+  > CardView被包装为一种布局，并且经常在ListView和RecyclerView的Item布局中，作为一种容器使用。  
+   
+### Glide [地址](https://github.com/bumptech/glide)
+
+   > 引入： compile 'com.github.bumptech.glide:glide:4.0.0'
+   
+   > 一个专注于平滑滚动的图片加载和缓存库
