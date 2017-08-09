@@ -20,7 +20,7 @@
     app:headerLayout="@layout/header_layout"表示引用一个头布局文件
     app:menu="@menu/main"表示引用一个menu作为下面的点击项
   ```
-  1.3、(模版地址)[https://github.com/xueyeqing/Android/tree/template/a_practice2]
+  1.3、[模版地址](https://github.com/xueyeqing/Android/tree/template/a_practice2)
   
 ###  关于Retrofit用法
  
@@ -34,7 +34,7 @@
       compile 'com.squareup.retrofit2:converter-gson:2.1.0'
       compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
      ```
-   2、(参考资料)[http://blog.csdn.net/u011200604/article/details/72901564]
+   2、[参考资料](http://blog.csdn.net/u011200604/article/details/72901564)
    
 ### CardView
 
