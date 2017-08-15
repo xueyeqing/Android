@@ -62,3 +62,8 @@
   apply plugin: 'com.android.library'
   apply plugin: 'com.jakewharton.butterknife'
  ```
+ 
+### 插件GsonFormat
+  androidstudio>>Preference>>plugins,
+  然后在新打开的窗口中搜索GsonFormat，点击右侧绿色按钮就可以下载安装了，安装完需要重启下studio，就可以用了。
+  
