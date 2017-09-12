@@ -8,8 +8,19 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/a_mvpdemo" />
+            <option value="$PROJECT_DIR$/a_practice2" />
+            <option value="$PROJECT_DIR$/a_practicedraw1" />
             <option value="$PROJECT_DIR$/android_mvp" />
+            <option value="$PROJECT_DIR$/android_mvplogin" />
             <option value="$PROJECT_DIR$/android_mvvm" />
+            <option value="$PROJECT_DIR$/android_practice1" />
+            <option value="$PROJECT_DIR$/android_recycleviewbase" />
+            <option value="$PROJECT_DIR$/android_stickydecoration" />
+            <option value="$PROJECT_DIR$/b_boardcastsendsms" />
+            <option value="$PROJECT_DIR$/b_customcontentprovider" />
+            <option value="$PROJECT_DIR$/c_gankdaily" />
+            <option value="$PROJECT_DIR$/stickydecoration" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

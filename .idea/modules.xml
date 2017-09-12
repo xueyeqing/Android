@@ -2,9 +2,20 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Android_demo.iml" filepath="$PROJECT_DIR$/Android_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Android.iml" filepath="$PROJECT_DIR$/Android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/a_mvpdemo/a_mvpdemo.iml" filepath="$PROJECT_DIR$/a_mvpdemo/a_mvpdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/a_practice2/a_practice2.iml" filepath="$PROJECT_DIR$/a_practice2/a_practice2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/a_practicedraw1/a_practicedraw1.iml" filepath="$PROJECT_DIR$/a_practicedraw1/a_practicedraw1.iml" />
       <module fileurl="file://$PROJECT_DIR$/android_mvp/android_mvp.iml" filepath="$PROJECT_DIR$/android_mvp/android_mvp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android_mvplogin/android_mvplogin.iml" filepath="$PROJECT_DIR$/android_mvplogin/android_mvplogin.iml" />
       <module fileurl="file://$PROJECT_DIR$/android_mvvm/android_mvvm.iml" filepath="$PROJECT_DIR$/android_mvvm/android_mvvm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android_practice1/android_practice1.iml" filepath="$PROJECT_DIR$/android_practice1/android_practice1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android_recycleviewbase/android_recycleviewbase.iml" filepath="$PROJECT_DIR$/android_recycleviewbase/android_recycleviewbase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android_stickydecoration/android_stickydecoration.iml" filepath="$PROJECT_DIR$/android_stickydecoration/android_stickydecoration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/b_boardcastsendsms/b_boardcastsendsms.iml" filepath="$PROJECT_DIR$/b_boardcastsendsms/b_boardcastsendsms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/b_customcontentprovider/b_customcontentprovider.iml" filepath="$PROJECT_DIR$/b_customcontentprovider/b_customcontentprovider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/c_gankdaily/c_gankdaily.iml" filepath="$PROJECT_DIR$/c_gankdaily/c_gankdaily.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stickydecoration/stickydecoration.iml" filepath="$PROJECT_DIR$/stickydecoration/stickydecoration.iml" />
     </modules>
   </component>
 </project>
