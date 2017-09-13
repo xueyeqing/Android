@@ -2,6 +2,8 @@ package com.winorout.zyzhang.gankdaily.mvprx;
 
 import com.winorout.zyzhang.gankdaily.mvprx.entity.GankData;
 
+import java.util.List;
+
 /**
  * @Description:
  * @Author: zyzhang
@@ -9,5 +11,5 @@ import com.winorout.zyzhang.gankdaily.mvprx.entity.GankData;
  */
 public interface ICallBackResult {
 
-    void result(GankData gankData);
+    void result(List<GankData.Result.Gank> listgank);
 }

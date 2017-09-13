@@ -3,6 +3,7 @@ package com.winorout.zyzhang.gankdaily.mvprx;
 import com.winorout.zyzhang.gankdaily.mvprx.entity.GankData;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * @Description:
@@ -12,11 +13,11 @@ import java.util.Date;
 public interface IGankContract {
 
     interface IModel {
-        void getData(int year, int month, int day, ICallBackResult callBackResult);
+        void getData(Date date, int year, int month, int day, ICallBackResult callBackResult);
     }
 
     interface IView {
-        void onSuccess(GankData gank);
+        void onSuccess(List<GankData.Result.Gank> listgank);
     }
 
     interface IPresenter {

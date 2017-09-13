@@ -9,6 +9,7 @@ import com.winorout.zyzhang.gankdaily.mvprx.entity.GankData;
 import com.winorout.zyzhang.gankdaily.mvprx.presenter.GankPresenter;
 
 import java.util.Date;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements IGankContract.IView {
 
@@ -29,7 +30,9 @@ public class MainActivity extends AppCompatActivity implements IGankContract.IVi
     }
 
     @Override
-    public void onSuccess(GankData gank) {
+    public void onSuccess(List<GankData.Result.Gank> listgank) {
         Logger.d("onSuccess");
+        Logger.json(listgank.toString());
     }
+
 }

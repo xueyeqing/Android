@@ -4,6 +4,8 @@ import android.content.Context;
 
 import com.winorout.zyzhang.gankdaily.mvprx.entity.GankData;
 
+import java.util.List;
+
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
@@ -63,8 +65,10 @@ public class RetrofitHelper {
         return mRetrofit.create(IRetrofitService.class);
     }
 
-    public void getGankData(int year, int month, int day, Subscriber<GankData> subscriber) {
+    public void getGankData(int year, int month, int day, Func1<GankData, GankData.Result> func1, Func1<GankData.Result, List<GankData.Result.Gank>> func2, Subscriber<List<GankData.Result.Gank>> subscriber) {
         getServer().getGankData(year, month, day)
+                .map(func1)
+                .map(func2)
                 .subscribeOn(Schedulers.io())
                 .unsubscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
